@@ -1,0 +1,165 @@
+{
+  "skills": [
+    {
+      "id": "1",
+      "skillName": "JavaScript",
+      "proficiencyLevel": "Intermediate",
+      "description": "Proficient in building dynamic web applications using JavaScript, ES6+, and modern frameworks like React and Angular."
+    },
+    {
+      "id": "2",
+      "skillName": "TypeScript",
+      "proficiencyLevel": "Advanced",
+      "description": "Strong knowledge of TypeScript for building scalable and maintainable web applications."
+    },
+    {
+      "id": "3",
+      "skillName": "HTML5",
+      "proficiencyLevel": "Expert",
+      "description": "Expertise in creating semantic, accessible, and responsive web pages using HTML5."
+    },
+    {
+      "id": "4",
+      "skillName": "CSS3",
+      "proficiencyLevel": "Expert",
+      "description": "Advanced knowledge of CSS3 for crafting modern, responsive, and visually appealing designs."
+    },
+    {
+      "id": "5",
+      "skillName": "Angular",
+      "proficiencyLevel": "Advanced",
+      "description": "Experienced in developing large-scale applications with Angular and RxJS."
+    },
+    {
+      "id": "6",
+      "skillName": "React",
+      "proficiencyLevel": "Advanced",
+      "description": "Skilled in building reusable components and state management using React and Redux."
+    },
+    {
+      "id": "7",
+      "skillName": "Node.js",
+      "proficiencyLevel": "Intermediate",
+      "description": "Proficient in creating RESTful APIs and backend services using Node.js."
+    },
+    {
+      "id": "8",
+      "skillName": "Express.js",
+      "proficiencyLevel": "Intermediate",
+      "description": "Experienced in building robust server-side applications using Express.js."
+    },
+    {
+      "id": "9",
+      "skillName": "MongoDB",
+      "proficiencyLevel": "Intermediate",
+      "description": "Knowledgeable in designing and querying NoSQL databases with MongoDB."
+    },
+    {
+      "id": "10",
+      "skillName": "SQL",
+      "proficiencyLevel": "Advanced",
+      "description": "Proficient in database design and querying using SQL for relational databases."
+    },
+    {
+      "id": "11",
+      "skillName": "Python",
+      "proficiencyLevel": "Advanced",
+      "description": "Experienced in scripting, automation, and building applications using Python."
+    },
+    {
+      "id": "12",
+      "skillName": "Django",
+      "proficiencyLevel": "Intermediate",
+      "description": "Skilled in developing backend web applications using Django."
+    },
+    {
+      "id": "13",
+      "skillName": "Flask",
+      "proficiencyLevel": "Intermediate",
+      "description": "Familiar with lightweight web application development using Flask."
+    },
+    {
+      "id": "14",
+      "skillName": "Git",
+      "proficiencyLevel": "Expert",
+      "description": "Expertise in version control and collaborative development using Git."
+    },
+    {
+      "id": "15",
+      "skillName": "REST APIs",
+      "proficiencyLevel": "Advanced",
+      "description": "Skilled in designing and consuming RESTful APIs for client-server communication."
+    },
+    {
+      "id": "16",
+      "skillName": "GraphQL",
+      "proficiencyLevel": "Intermediate",
+      "description": "Familiar with designing and querying APIs using GraphQL."
+    },
+    {
+      "id": "17",
+      "skillName": "Webpack",
+      "proficiencyLevel": "Intermediate",
+      "description": "Experienced in bundling and optimizing assets with Webpack."
+    },
+    {
+      "id": "18",
+      "skillName": "Testing",
+      "proficiencyLevel": "Advanced",
+      "description": "Proficient in writing unit, integration, and end-to-end tests using Jest, Jasmine, and Cypress."
+    },
+    {
+      "id": "19",
+      "skillName": "Agile Methodology",
+      "proficiencyLevel": "Advanced",
+      "description": "Experienced in Agile workflows, including sprint planning, retrospectives, and Kanban boards."
+    }
+  ],
+  "goals": [
+    {
+      "id": "1737291033016",
+      "skill": "HTML5",
+      "deadline": "2025-01-19T12:50:33.016Z",
+      "tasks": [
+        {
+          "id": 1737291043949,
+          "label": "vjhbgghjcv",
+          "checked": true,
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": "1737291172226",
+      "skill": "TypeScript",
+      "deadline": "2025-01-19T12:52:52.226Z",
+      "tasks": [
+        {
+          "id": 1737291183467,
+          "label": "Basics of HTML",
+          "checked": true,
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": "1737300347258",
+      "skill": "Python",
+      "deadline": "2025-01-19T15:21:40.651Z",
+      "tasks": [
+        {
+          "id": 1737300330916,
+          "label": "Basics of HTML",
+          "checked": true,
+          "status": "completed"
+        },
+        {
+          "id": 1737300342695,
+          "label": "advanced",
+          "checked": true,
+          "status": "inprogress"
+        }
+      ]
+    }
+  ]
+}

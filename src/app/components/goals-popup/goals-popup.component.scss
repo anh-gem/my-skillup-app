@@ -1,0 +1,32 @@
+.container{
+  background-color: rgb(116, 112, 105);
+  overflow: auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  width: fit-content;
+  max-height: 500px;
+}
+
+.card{
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.taskName{
+  color: white;
+}
+
+.card-content{
+  display: flex;
+  gap: 10px;
+}
+
+.toggleButton{
+  margin-top: 10px;
+}
+
+.textStyle{
+  color: white;
+}

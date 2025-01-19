@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="skill-create">
+    <form class="skillform" (submit)="editMode ? updateSkill():addSkill()" #skillForm="ngForm">
+      <mat-form-field>
+        <mat-label>Skill Name</mat-label>
+        <input matInput [(ngModel)]="newSkill.skillName" name="skillName" required minlength="3" #skillName="ngModel" />
+        <mat-error *ngIf="skillName.invalid && skillName.touched">
+          <span *ngIf="skillName.errors?.['required']">Skill Name is required.</span>
+          <span *ngIf="skillName.errors?.['minlength']">
+            Skill Name must be at least 3 characters long.
+          </span>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Proficiency level</mat-label>
+        <mat-select [(ngModel)]="newSkill.proficiencyLevel" name="proficiencyLevel" required>
+          <mat-option value="Beginner">Beginner</mat-option>
+          <mat-option value="Intermediate">Intermediate</mat-option>
+          <mat-option value="Advanced">Advanced</mat-option>
+          <mat-option value="Expert">Expert</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Skill Description</mat-label>
+        <textarea matInput [(ngModel)]="newSkill.description" name="description"></textarea>
+      </mat-form-field>
+      <div class="button-row">
+        <button mat-raised-button type="submit" [disabled]="!skillForm.valid"  [color]="editMode ? 'primary' : 'accent'"> {{ editMode ? 'Update Skill' : 'Save Skill' }}</button>
+        <button mat-raised-button type="button" [disabled]="!skillForm.valid" (click)="resetNewSkill()">Reset</button>
+      </div>
+      
+    </form>
+  </div>
+  <div class="skill-list">
+    <div class="cards">
+      <mat-card class="card" appearance="outlined" *ngFor="let skill of skills">
+        <mat-card-content class="mat-card-content">
+          <div>{{skill.skillName}} | {{skill.proficiencyLevel}}</div>
+          <div>
+            <div class="button-container">
+              <button mat-button color="accent" (click)="editSkill(skill)">Edit</button>
+              <button mat-button color="warn" (click)="deleteSkill(skill.id)">Delete</button>
+            </div>
+          </div>
+          </mat-card-content>
+      </mat-card>
+    </div>  
+  </div>
+</div>

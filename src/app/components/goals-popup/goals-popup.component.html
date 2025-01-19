@@ -1,0 +1,27 @@
+
+<div class="container">
+  <h1 class="textStyle">{{data.goal.skill}}</h1>
+  <label class="textStyle">You have set your deadline to {{data.goal.deadline | date}}. </label>
+  <form #goalForm='ngForm'>
+  <mat-card class="card" appearance="outlined" *ngFor="let task of data.goal.tasks">
+    <mat-card-content class="card-content" class="mat-card-content">
+      <label class="taskName">{{task.label}}</label>
+    
+      <div class="toggleButton">
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style" [(ngModel)]="task.status" 
+        (change)="updateGoalStatus(task.id, $event.value)">
+          <mat-button-toggle value="pending" style="color: darkgoldenrod;" type="button">Pending</mat-button-toggle>
+          <mat-button-toggle value="inprogress" style="color:coral;" type="button">Inprogress</mat-button-toggle>
+          <mat-button-toggle value="completed" style="color:rgb(80, 177, 80);" type="button">Completed</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <div mat-dialog-actions>
+    <!-- <button mat-button color="green" (click)="updateGoalStatus()">Update</button> -->
+    <button mat-button type="submit" (click)="updateGoal()">Updated</button>
+    <button mat-button color="warn">Delete</button>
+    <button mat-button mat-dialog-close (click)="closeDialog()">Close</button>
+  </div>
+</form>
+</div>

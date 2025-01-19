@@ -1,0 +1,15 @@
+.navigation{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: white;
+}
+
+.navigation a{
+  color: wheat;
+  // font-family: monospace;
+  font-size: larger;
+  letter-spacing: inherit;
+  text-decoration: none;
+  margin-top: 60px;
+}
